@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+img{
+    height: 10vh;
+    width: 10vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    color: white;
+}
+
+body{
+    --TTwitter-color: white;
+    --TTwitter-background: rgba(255, 255, 255, 0.126);
+}
+body{
+    background-color: #333;
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.sidebar-feed-container{
+    display: flex;
+    flex:1;
+}
+
+.sidebar{
+    border-right: 1px solid var(--TTwitter-background);
+    flex: 0.2;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sidebarOption, .material-icons{
+    padding: 14px;
+}
+
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebarOption h2 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.sidebarOption:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 30px;
+    transition: color 100ms ease-out;
+}
+
+.feed{
+    flex: 0.7;
+    border-right: 1px solid var(--TTwitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.feed__header{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 100;
+    border: 1px solid var(--TTwitter-background);
+    padding: 15px 20px;
+}
+
+.feed__header h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.tweetbox__input img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.tweetBox{
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--TTwitter-background);
+    padding-right: 10px;
+}
+
+.tweetBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetbox__input{
+    display: flex;
+    padding: 20px;
+}
+
+.tweetbox__input input{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tweetBox__tweetButton{
+    background-color: #1985a1;
+    border: none;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.user_image_weapper{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+/* feeds nav */
+
+.feeds-nav{
+    position: fixed;
+    width: 100%;
+    height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
+    
+}
